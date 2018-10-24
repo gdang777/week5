@@ -20,7 +20,7 @@ class Student extends Person {
 
 class Mentor extends Person {
   goOnShift() {
-    this.OnShift = True;
+    this.onShift = true;
   }
   goOffShift() {
     this.onShift = false;
@@ -36,3 +36,9 @@ newStudent.enroll('sept24');
 console.log(newStudent.cohort);
 console.log(newStudent.bio());
 
+newMentor = new Mentor('Sam', 'english accent', 'sam@sam.ca')
+console.log(newMentor);
+console.log(newMentor.bio());
+newMentor.goOffShift();
+console.log(newMentor.onShift);
+// newMentor.onShift;
