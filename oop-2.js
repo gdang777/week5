@@ -13,7 +13,7 @@ class Person {
 }
 
 class Student extends Person {
-  enroll(cohort){
+  enroll(cohort) {
    this.cohort = cohort; 
   }
 }
@@ -36,7 +36,7 @@ newStudent.enroll('sept24');
 console.log(newStudent.cohort);
 console.log(newStudent.bio());
 
-newMentor = new Mentor('Sam', 'english accent', 'sam@sam.ca')
+let newMentor = new Mentor('Sam', 'english accent', 'sam@sam.ca')
 console.log(newMentor);
 console.log(newMentor.bio());
 newMentor.goOffShift();
